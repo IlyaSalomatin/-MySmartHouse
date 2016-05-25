@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MySmartHouse.Program" Collapsed="true">
+    <Position X="4.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MySmartHouse.Room" Collapsed="true">
+    <Position X="4.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Room.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MySmartHouse.Menu" Collapsed="true">
+    <Position X="4.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAECAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Menu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MySmartHouse.LivingRoom">
+    <Position X="2" Y="2.25" Width="1.5" />
+    <InheritanceLine Type="MySmartHouse.Room" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.062" Y="8.5" />
+        <Point X="5.062" Y="7.839" />
+        <Point X="2.688" Y="7.839" />
+        <Point X="2.688" Y="7.009" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAACQSAABCAAEAAAgCAIAACAAAABAEAQA=</HashCode>
+      <FileName>Classes\Livingroom.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MySmartHouse.BathRoom">
+    <Position X="6.5" Y="2.25" Width="1.5" />
+    <InheritanceLine Type="MySmartHouse.Room" FixedFromPoint="true">
+      <Path>
+        <Point X="5.688" Y="8.5" />
+        <Point X="5.688" Y="7.835" />
+        <Point X="7.25" Y="7.835" />
+        <Point X="7.25" Y="5.473" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAASAABAAAAAQAACAIAACAAAAAAEAQA=</HashCode>
+      <FileName>Classes\Bathroom.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MySmartHouse.BedRoom">
+    <Position X="3.5" Y="2.25" Width="1.5" />
+    <InheritanceLine Type="MySmartHouse.Room" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.312" Y="8.5" />
+        <Point X="5.312" Y="7.756" />
+        <Point X="4" Y="7.756" />
+        <Point X="4" Y="7.011" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAACAAAACAAACQSAABCAAEAAAgCAIAACAAAABAEAQA=</HashCode>
+      <FileName>Classes\BedRoom.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MySmartHouse.Kitchen">
+    <Position X="5" Y="2.25" Width="1.5" />
+    <InheritanceLine Type="MySmartHouse.Room" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.5" Y="8.5" />
+        <Point X="5.5" Y="6.627" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAACASAABCAAAAQAACAIAACAAAABAEAQA=</HashCode>
+      <FileName>Classes\Kitchen.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MySmartHouse.Hall">
+    <Position X="9.5" Y="2.25" Width="1.5" />
+    <InheritanceLine Type="MySmartHouse.Room" FixedFromPoint="true">
+      <Path>
+        <Point X="5.875" Y="8.5" />
+        <Point X="5.875" Y="7.835" />
+        <Point X="10.25" Y="7.835" />
+        <Point X="10.25" Y="4.896" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAASAABCAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Classes\Hall.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MySmartHouse.OverallFunctionality">
+    <Position X="8" Y="2.25" Width="1.5" />
+    <InheritanceLine Type="MySmartHouse.Room" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.188" Y="8.5" />
+        <Point X="6.188" Y="7.835" />
+        <Point X="8.75" Y="7.835" />
+        <Point X="8.75" Y="5.088" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAQwAAAAAAAEAEAAAAAAQAAAAAA=</HashCode>
+      <FileName>Classes\OverallFunctionality.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MySmartHouse.ChildrensRoom">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <InheritanceLine Type="MySmartHouse.Room" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="4.875" Y="8.5" />
+        <Point X="4.875" Y="7.792" />
+        <Point X="1.25" Y="7.792" />
+        <Point X="1.25" Y="7.011" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAACQSAABCAAEAAAgCAIAACAAAABAEAQA=</HashCode>
+      <FileName>Classes\ChildrensRoom.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="MySmartHouse.IOzonation">
+    <Position X="12.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Intervaces\IOzonation.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MySmartHouse.IFloorHeating">
+    <Position X="12.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Intervaces\IFloorHeating.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MySmartHouse.IBoiler">
+    <Position X="11.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Intervaces\IBoiler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MySmartHouse.ILighting">
+    <Position X="12.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Intervaces\ILighting.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MySmartHouse.IPower">
+    <Position X="11.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Intervaces\IPower.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MySmartHouse.IAlarmSystem">
+    <Position X="11.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Intervaces\IAlarmSystem.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MySmartHouse.ISmartWindow">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAIAACAAAAAAAAQA=</HashCode>
+      <FileName>Intervaces\ISmartWindow.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MySmartHouse.IBlinds">
+    <Position X="11.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQgAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Intervaces\IBlinds.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MySmartHouse.IAirConditioning">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAACAAAAAAAAAAAAACAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Intervaces\IAirConditioning.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MySmartHouse.IThermometer">
+    <Position X="12.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Intervaces\IThermometer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MySmartHouse.IAirHumidification">
+    <Position X="12.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Intervaces\IHumidification.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="MySmartHouse.Heating" Collapsed="true">
+    <Position X="9.5" Y="9.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAEAAAAACAAAAAAAAACAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enums\Heating.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MySmartHouse.Lighting" Collapsed="true">
+    <Position X="9.5" Y="10.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAACAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Enums\Lighting.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MySmartHouse.Power" Collapsed="true">
+    <Position X="10.75" Y="9.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enums\Power.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MySmartHouse.TimerHumidification" Collapsed="true">
+    <Position X="8.25" Y="10.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAQAAACAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Enums\TimerHumidification.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MySmartHouse.TimerOzonation" Collapsed="true">
+    <Position X="8.25" Y="9.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAQAACAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Enums\TimerOzonation.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

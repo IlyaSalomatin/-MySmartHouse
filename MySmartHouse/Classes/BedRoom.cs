@@ -13,7 +13,7 @@ namespace MySmartHouse
         public byte DimmingGlass { get; set; }
         public byte TempConditioning { get; set; }
         public bool ConditioningState { get; set; }
-        public Heating floorHeating { get; set; }
+        public Heating FloorHeating { get; set; }
         public double Temperature { get; set; }
         public byte Humidity { get; set; }
         public TimerOzonation OzonationState { get; set; }
@@ -24,9 +24,9 @@ namespace MySmartHouse
             Humidity = humidity;
         }
         
-        public void SetTimerOzonation(TimerOzonation v)
+        public void SetTimerOzonation(TimerOzonation time)
         {
-            OzonationState = v;
+            OzonationState = time;
             Task t = new Task(TimerOzon);
             t.Start();
         }
@@ -36,10 +36,10 @@ namespace MySmartHouse
             Thread.Sleep(time);
             OzonationState = TimerOzonation.Off;
         }
-        public void SetTimerHumidification(TimerHumidification v)
+        public void SetTimerHumidification(TimerHumidification time)
         {
             
-            HumidificationState = v;
+            HumidificationState = time;
             Task t = new Task(TimerHum);
             t.Start();
             
@@ -50,10 +50,10 @@ namespace MySmartHouse
             Thread.Sleep(time);
             HumidificationState = TimerHumidification.Off;
         }
-        public void OnConditioning(byte t)
+        public void OnConditioning(byte temp)
         {
             ConditioningState = true;
-            TempConditioning = t;
+            TempConditioning = temp;
 
         }
         public void OffConditioning()
@@ -64,9 +64,9 @@ namespace MySmartHouse
         {
             FrostedGlassState = FrostedGlassState == true ? FrostedGlassState = false : FrostedGlassState = true;
         }
-        public void SetDimmingGlass(byte p)
+        public void SetDimmingGlass(byte percent)
         {
-            DimmingGlass = p;
+            DimmingGlass = percent;
         }
 
     }

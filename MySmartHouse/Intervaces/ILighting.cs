@@ -7,6 +7,6 @@ namespace MySmartHouse
 {
     public interface ILighting
     {
-        Lighting lightingState { get; set; }
+        Lighting LightingState { get; set; }
     }
 }

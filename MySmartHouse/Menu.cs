@@ -27,7 +27,7 @@ namespace MySmartHouse
                 Console.ForegroundColor = ConsoleColor.DarkGreen;
                 Console.WriteLine("\r{0}", DateTime.Now);
                 Console.WriteLine();
-                Console.WriteLine("Blinds state:  " + ((IBlinds)Rooms[0]).Blinds + "       " + "Mode of lightin :  " + ((ILighting)Rooms[0]).lightingState);
+                Console.WriteLine("Blinds state:  " + ((IBlinds)Rooms[0]).Blinds + "       " + "Mode of lightin :  " + ((ILighting)Rooms[0]).LightingState);
                 Console.Write("Alarmsustem :  ");
                 if (((IAlarmSystem)Rooms[0]).AlarmSystemState == "On")
                 {
@@ -41,20 +41,20 @@ namespace MySmartHouse
                 }
                 Console.ForegroundColor = ConsoleColor.DarkGreen;
                 Console.Write("Mode of power   :  ");
-                if (((IPower)Rooms[0]).powerState == Power.CommercialPower)
+                if (((IPower)Rooms[0]).PowerState == Power.CommercialPower)
                 {
                     Console.ForegroundColor = ConsoleColor.DarkBlue;
-                    Console.WriteLine(((IPower)Rooms[0]).powerState);
+                    Console.WriteLine(((IPower)Rooms[0]).PowerState);
                 }
-                else if (((IPower)Rooms[0]).powerState == Power.EmergencyGenerator)
+                else if (((IPower)Rooms[0]).PowerState == Power.EmergencyGenerator)
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine(((IPower)Rooms[0]).powerState);
+                    Console.WriteLine(((IPower)Rooms[0]).PowerState);
                 }
                 else
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine(((IPower)Rooms[0]).powerState);
+                    Console.WriteLine(((IPower)Rooms[0]).PowerState);
                 }
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine();
@@ -118,32 +118,32 @@ namespace MySmartHouse
                         break;
                     case "com":
                         {
-                            ((IPower)Rooms[0]).powerState = Power.CommercialPower;
+                            ((IPower)Rooms[0]).PowerState = Power.CommercialPower;
                         }
                         break;
                     case "alt":
                         {
-                            ((IPower)Rooms[0]).powerState = Power.AlternativePower;
+                            ((IPower)Rooms[0]).PowerState = Power.AlternativePower;
                         }
                         break;
                     case "gen":
                         {
-                            ((IPower)Rooms[0]).powerState = Power.EmergencyGenerator;
+                            ((IPower)Rooms[0]).PowerState = Power.EmergencyGenerator;
                         }
                         break;
                     case "sw":
                         {
-                            ((ILighting)Rooms[0]).lightingState = Lighting.MechanicalSwitch;
+                            ((ILighting)Rooms[0]).LightingState = Lighting.MechanicalSwitch;
                         }
                         break;
                     case "sn":
                         {
-                            ((ILighting)Rooms[0]).lightingState = Lighting.MotionSensor;
+                            ((ILighting)Rooms[0]).LightingState = Lighting.MotionSensor;
                         }
                         break;
                     case "sp":
                         {
-                            ((ILighting)Rooms[0]).lightingState = Lighting.SpokenCommands;
+                            ((ILighting)Rooms[0]).LightingState = Lighting.SpokenCommands;
                         }
                         break;
                     case "1":
@@ -197,7 +197,7 @@ namespace MySmartHouse
                 Console.Write("You choosed : " + r.Name + "---");
                 if (r is IThermometer)
                 {
-                    Console.WriteLine("    t = "+((IThermometer)r).Temperature+" 'C     "+"f = "+((IThermometer)r).Humidity+"%.");
+                    Console.WriteLine("    temp = "+((IThermometer)r).Temperature+" 'C     "+"f = "+((IThermometer)r).Humidity+"%.");
                 }
                 else
                 {
@@ -210,7 +210,7 @@ namespace MySmartHouse
                 Console.WriteLine("");
                 if (r is IFloorHeating)
                 {
-                    Console.WriteLine("FloorHeating : "+ ((IFloorHeating)r).floorHeating+".");
+                    Console.WriteLine("FloorHeating : "+ ((IFloorHeating)r).FloorHeating+".");
                 }
                 if (r is ISmartWindow)
                 {
@@ -238,7 +238,7 @@ namespace MySmartHouse
                 }
                 if (r is IBoiler)
                 {
-                    Console.WriteLine("Boiler's mode : "+((IBoiler)r).boiler+".");
+                    Console.WriteLine("Boiler's mode : "+((IBoiler)r).Boiler+".");
                 }
                 Console.WriteLine();
                 Console.ForegroundColor = ConsoleColor.Yellow;
@@ -277,52 +277,52 @@ namespace MySmartHouse
                 {
                     case "fh0":
                         {
-                            ((IFloorHeating)r).floorHeating = Heating.off;
+                            ((IFloorHeating)r).FloorHeating = Heating.off;
                         }
                         break;
                     case "fh1":
                         {
-                            ((IFloorHeating)r).floorHeating = Heating.low;
+                            ((IFloorHeating)r).FloorHeating = Heating.low;
                         }
                         break;
                     case "fh2":
                         {
-                            ((IFloorHeating)r).floorHeating = Heating.medium;
+                            ((IFloorHeating)r).FloorHeating = Heating.medium;
                         }
                         break;
                     case "fh3":
                         {
-                            ((IFloorHeating)r).floorHeating = Heating.high;
+                            ((IFloorHeating)r).FloorHeating = Heating.high;
                         }
                         break;
                     case "fh4":
                         {
-                            ((IFloorHeating)r).floorHeating = Heating.max;
+                            ((IFloorHeating)r).FloorHeating = Heating.max;
                         }
                         break;
                     case "b0":
                         {
-                            ((IBoiler)r).boiler = Heating.off;
+                            ((IBoiler)r).Boiler = Heating.off;
                         }
                         break;
                     case "b1":
                         {
-                            ((IBoiler)r).boiler = Heating.low;
+                            ((IBoiler)r).Boiler = Heating.low;
                         }
                         break;
                     case "b2":
                         {
-                            ((IBoiler)r).boiler = Heating.medium;
+                            ((IBoiler)r).Boiler = Heating.medium;
                         }
                         break;
                     case "b3":
                         {
-                            ((IBoiler)r).boiler = Heating.high;
+                            ((IBoiler)r).Boiler = Heating.high;
                         }
                         break;
                     case "b4":
                         {
-                            ((IBoiler)r).boiler = Heating.max;
+                            ((IBoiler)r).Boiler = Heating.max;
                         }
                         break;
                     case "ozof":

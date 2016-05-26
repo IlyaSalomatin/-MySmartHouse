@@ -17,7 +17,7 @@
   <Class Name="MySmartHouse.Menu" Collapsed="true">
     <Position X="4.75" Y="9.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAECAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAECAAEAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Menu.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -32,7 +32,7 @@
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAACAAAAAAAACQSAABCAAEAAAgCAIAACAAAABAEAQA=</HashCode>
+      <HashCode>AAAACAAAACAAACQCAABCEAEAAAgCAIAACAAAABAEAQA=</HashCode>
       <FileName>Classes\Livingroom.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -48,7 +48,7 @@
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAASAABAAAAAQAACAIAACAAAAAAEAQA=</HashCode>
+      <HashCode>AAAAAAAAACAAAAACAABAEAAAAAACAIAACAAAAAAAAQA=</HashCode>
       <FileName>Classes\Bathroom.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -64,7 +64,7 @@
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAACAAAACAAACQSAABCAAEAAAgCAIAACAAAABAEAQA=</HashCode>
+      <HashCode>AAAACAAAACAAACQCAABCEAEAAAgCAIAACAAAABAEAQA=</HashCode>
       <FileName>Classes\BedRoom.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -78,7 +78,7 @@
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAACAAAAAAAACASAABCAAAAQAACAIAACAAAABAEAQA=</HashCode>
+      <HashCode>AAAACAAAACAAACACAABCEAAAAAACAIAACAAAABAEAQA=</HashCode>
       <FileName>Classes\Kitchen.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -94,7 +94,7 @@
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAASAABCAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <HashCode>AAAAAAAAACAAAAACAABCEAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
       <FileName>Classes\Hall.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -110,7 +110,7 @@
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAABAAAAAAAQwAAAAAAAEAEAAAAAAQAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAABAAAAAAAQgAAAAEAAAAEAABAAAQAAAAAA=</HashCode>
       <FileName>Classes\OverallFunctionality.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -126,7 +126,7 @@
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAACAAAAAAAACQSAABCAAEAAAgCAIAACAAAABAEAQA=</HashCode>
+      <HashCode>AAAACAAAACAAACQCAABCEAEAAAgCAIAACAAAABAEAQA=</HashCode>
       <FileName>Classes\ChildrensRoom.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -141,28 +141,28 @@
   <Interface Name="MySmartHouse.IFloorHeating">
     <Position X="12.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Intervaces\IFloorHeating.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="MySmartHouse.IBoiler">
     <Position X="11.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Intervaces\IBoiler.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="MySmartHouse.ILighting">
     <Position X="12.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Intervaces\ILighting.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="MySmartHouse.IPower">
     <Position X="11.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
       <FileName>Intervaces\IPower.cs</FileName>
     </TypeIdentifier>
   </Interface>

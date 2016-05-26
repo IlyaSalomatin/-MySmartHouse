@@ -7,6 +7,6 @@ namespace MySmartHouse
 {
     public interface IBoiler
     {
-        Heating boiler { get; set; }
+        Heating Boiler { get; set; }
     }
 }

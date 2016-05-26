@@ -9,7 +9,7 @@ namespace MySmartHouse
 {
     public class Hall:Room,IOzonation,IThermometer,IFloorHeating
     {
-        public Heating floorHeating { get; set; }
+        public Heating FloorHeating { get; set; }
         public double Temperature { get; set; }
         public byte Humidity { get; set; }
         public TimerOzonation OzonationState { get; set; }
@@ -18,13 +18,13 @@ namespace MySmartHouse
             Temperature = temperature;
             Humidity = humidity;
         }
-        public void SetTimerOzonation(TimerOzonation v)
+        public void SetTimerOzonation(TimerOzonation time)
         {
-            OzonationState = v;
-            Task t = new Task(Timer);
+            OzonationState = time;
+            Task t = new Task(TimerOzon);
             t.Start();
         }
-        void Timer()
+        void TimerOzon()
         {
             int time = (int)OzonationState;
             Thread.Sleep(time);

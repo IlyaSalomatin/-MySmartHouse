@@ -8,8 +8,8 @@ namespace MySmartHouse
 {
     public class OverallFunctionality:Room,IBlinds,ILighting,IPower,IAlarmSystem
     {
-        public Power powerState { get; set; }
-        public Lighting lightingState { get; set; }
+        public Power PowerState { get; set; }
+        public Lighting LightingState { get; set; }
         public string AlarmSystemState { get; set; }
         public string Blinds { get; set; }
         public OverallFunctionality(string name) : base(name) 

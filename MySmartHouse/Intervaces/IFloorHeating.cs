@@ -7,6 +7,6 @@ namespace MySmartHouse
 {
     public interface IFloorHeating
     {
-        Heating floorHeating { get; set; }
+        Heating FloorHeating { get; set; }
     }
 }

@@ -12,16 +12,16 @@ namespace MySmartHouse
         public bool FrostedGlassState { get; set; }
         public byte DimmingGlass { get; set; }
         public BathRoom(string name) : base(name) { }
-        public Heating floorHeating { get; set; }
-        public Heating boiler { get; set; }
+        public Heating FloorHeating { get; set; }
+        public Heating Boiler { get; set; }
         public TimerOzonation OzonationState { get; set; }
-        public void SetTimerOzonation(TimerOzonation v)
+        public void SetTimerOzonation(TimerOzonation time)
         {
-            OzonationState = v;
-            Task t = new Task(Timer);
+            OzonationState = time;
+            Task t = new Task(TimerOzon);
             t.Start();
         }
-        void Timer()
+        void TimerOzon()
         {
             int time = (int)OzonationState;
             Thread.Sleep(time);
@@ -31,9 +31,9 @@ namespace MySmartHouse
         {
             FrostedGlassState = FrostedGlassState == true ? FrostedGlassState = false : FrostedGlassState = true;
         }
-        public void SetDimmingGlass(byte p)
+        public void SetDimmingGlass(byte percent)
         {
-            DimmingGlass = p;
+            DimmingGlass = percent;
         }
     }
 }

@@ -7,6 +7,6 @@ namespace MySmartHouse
 {
     public interface IPower
     {
-        Power powerState { get; set; }
+        Power PowerState { get; set; }
     }
 }
